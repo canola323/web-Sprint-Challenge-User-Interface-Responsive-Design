@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    text-align: center;
 }
 
 html{
@@ -59,6 +60,30 @@ body {
     line-height:1.5;
     font-size:1.6rem;
 }
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#logo img {
+    width: 15%;
+    padding-top: 1%;
+}
+
+#logo nav {
+    text-align: center;
+    width: 108%;
+}
+
+#logo a {
+    text-decoration: none;
+    padding: 5%;
+    font-size: 2rem;
+    color: black;
+}
+
 
 h1, h2, h3, h4, h5 {
     font-size: 2.5rem;
@@ -72,6 +97,12 @@ section, footer{
     width: 80%;
     margin: 0 auto;
 }
+#topimage img {
+ width: 100%;
+ height: 5%;
+ padding-top: 5%;
+ margin-right: 5%;  
+}
 
 /*Top Section Styles*/
 
@@ -80,14 +111,22 @@ section, footer{
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
+    border-bottom: 5px solid #ff4b00;
     text-align: justify;
 }
 
 .top-content .text-container {
     width: 35%;
     padding: 0 1%;
-    padding-bottom: 4%;  
+    padding-bottom: 4%; 
+    font-weight: bold;
+}
+
+.top-content .text-container p {
+    width: 55%;
+    text-align: left;
+    margin-left: 25%;
+    font-size: 1.8rem;
 }
 
 /*Middle Section Styles*/
@@ -97,6 +136,10 @@ section, footer{
 
 .middle-content h2 {
     margin-bottom: 0;
+    margin-right: 110%;
+    width: 20%;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .middle-content .boxes {
@@ -112,16 +155,86 @@ section, footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8%;
+}
+
+#box1 {
+    background: #008080;
+}
+
+#box2 {
+    background: #ffd700;
+}
+
+#box3 {
+    background: #5f9ea0;
+}
+
+#box4 {
+    background: #ff7f50;
+}
+
+#box5 {
+    background: crimson;
+}
+
+#box6 {
+    background: forestgreen;
+}
+
+#box7 {
+    background: darkorchid;
+}
+
+#box8 {
+    background: hotpink;
+}
+
+#box9 {
+    background: indigo;
+}
+
+#box10 {
+    background: dodgerblue;
 }
 
 /*Bottom Section Styles*/
+
+
 .bottom-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 4%;
+    border-top: 5px solid #ff4b00;
+    text-align: justify;
+}
+
+#line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+    text-align: justify;
 }
 
 .bottom-content .text-container {
     width:25%;
+    font-weight: bold;
+}
+
+.bottom-content .text-container h2 {
+    text-align: left;
+    padding-bottom: 5%;
+    font-size: 2.8rem;
+}
+
+.bottom-content .text-container p {
+        width: 50%;
+        text-align: left;
+        margin-right: 50%;
+        font-size: 1.8rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -132,6 +245,20 @@ section, footer{
 footer {
     width: 100%;
     background-color: #ff4b00;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 2%;
+    font-size: 2rem;
+    color: white;
+    width: 50%;
 }
 
 /*About Page Styles*/
