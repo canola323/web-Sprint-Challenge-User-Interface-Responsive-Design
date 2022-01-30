@@ -210,14 +210,6 @@ section, footer{
     text-align: justify;
 }
 
-#line{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify;
-}
 
 .bottom-content .text-container {
     width:25%;
@@ -234,7 +226,7 @@ section, footer{
         width: 50%;
         text-align: left;
         margin-right: 50%;
-        font-size: 1.8rem;
+        font-size: 2rem;
 }
 
 .bottom-content .text-container:last-child {
@@ -262,6 +254,157 @@ footer a {
 }
 
 /*About Page Styles*/
+
+#top-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2.8px solid #ff4b00;
+    text-align: justify;
+    font-weight: 2rem;
+
+}
+
+#top-text h2 {
+    margin-right: 95%;
+    padding-top: 4%;
+}
+
+#top-text p {
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.mid-content1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+#strat img {
+    width: 100%;
+}
+
+#strat h2 {
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#strat p {
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+#strat {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2.8px solid #ff4b00;
+    text-align: justify;
+    font-weight: 2rem;
+}
+
+#how-we-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2.8px solid #ff4b00;
+    text-align: justify;
+    font-weight: 2rem;
+    padding-left: 5%;
+}
+
+#how-we-work img {
+    width: 100%;
+}
+
+#how-we-work h2 {
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#how-we-work p {
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.mid-content2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+#places-we-work img {
+width: 100%;
+}
+
+#places-we-work h2 {
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#places-we-work p {
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+#places-we-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2.8px solid #ff4b00;
+    text-align: justify;
+    font-weight: 2rem;
+}
+
+#collaboration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2.8px solid #ff4b00;
+    text-align: justify;
+    font-weight: 2rem;
+    padding-left: 5%;
+}
+
+#collaboration img {
+    width: 100%;
+}
+
+#collaboration h2 {
+    text-align: left;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#collaboration p {
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.work-together p {
+    text-align: left;
+    font: 2rem;
+}
+
+.work-together h2 {
+    text-align: left;
+}
+
+.work-together {
+    padding-bottom: 10%;
+}
+
 
 
 /*Responsive Styles*/
