@@ -3,138 +3,488 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-html{
-    font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height:1.5;
-    font-size:1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 1.6rem;
 }
 
-h1, h2, h3, h4, h5 {
-    font-size: 2.5rem;
-    margin-bottom: 2%;
-    font-family: 'Rubik', sans-serif;
+header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
-section, footer{
-    padding:4% 0;
+
+#logo img {
+  width: 15%;
+  padding-top: 1%;
+}
+
+#logo nav {
+  text-align: center;
+  width: 105%;
+}
+
+#logo a {
+  text-decoration: none;
+  padding: 5%;
+  font-size: 2rem;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+  font-family: "Rubik", sans-serif;
+}
+section,
+footer {
+  padding: 4% 0;
 }
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
+}
+#topimage img {
+  width: 100%;
+  height: 5%;
+  padding-top: 5%;
+  margin-right: 5%;
 }
 
 /*Top Section Styles*/
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4%;
-    border-bottom: 2px solid #ff4b00;
-    text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 5px solid #ff4b00;
+  text-align: justify;
 }
 
 .top-content .text-container {
-    width: 35%;
-    padding: 0 1%;
-    padding-bottom: 4%;  
+  width: 35%;
+  padding: 0 1%;
+  padding-bottom: 4%;
+  font-weight: bold;
+}
+
+.top-content .text-container p {
+  width: 55%;
+  text-align: left;
+  margin-left: 25%;
+  font-size: 1.8rem;
 }
 
 /*Middle Section Styles*/
 .middle-content {
-    margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 
 .middle-content h2 {
-    margin-bottom: 0;
+  margin-bottom: 0;
+  margin-right: 110%;
+  width: 20%;
+  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .middle-content .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .middle-content .boxes .box {
-    background: black;
-    margin: 4% 0;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: black;
+  margin: 4% 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8%;
+}
+
+#box1 {
+  background: #008080;
+}
+
+#box2 {
+  background: #ffd700;
+}
+
+#box3 {
+  background: #5f9ea0;
+}
+
+#box4 {
+  background: #ff7f50;
+}
+
+#box5 {
+  background: crimson;
+}
+
+#box6 {
+  background: forestgreen;
+}
+
+#box7 {
+  background: darkorchid;
+}
+
+#box8 {
+  background: hotpink;
+}
+
+#box9 {
+  background: indigo;
+}
+
+#box10 {
+  background: dodgerblue;
 }
 
 /*Bottom Section Styles*/
+
 .bottom-content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-top: 5px solid #ff4b00;
+  text-align: justify;
 }
 
 .bottom-content .text-container {
-    width:25%;
+  width: 25%;
+  font-weight: bold;
+}
+
+.bottom-content .text-container h2 {
+  text-align: left;
+  padding-bottom: 5%;
+  font-size: 2.8rem;
+}
+
+.bottom-content .text-container p {
+  width: 50%;
+  text-align: left;
+  margin-right: 50%;
+  font-size: 2rem;
 }
 
 .bottom-content .text-container:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 /*Footer Styles*/
 footer {
-    width: 100%;
-    background-color: #ff4b00;
+  width: 100%;
+  background-color: #ff4b00;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 2%;
+  font-size: 2rem;
+  color: white;
+  width: 50%;
 }
 
 /*About Page Styles*/
 
+#top-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2.8px solid #ff4b00;
+  text-align: justify;
+  font-weight: 2rem;
+}
+
+#top-text h2 {
+  margin-right: 95%;
+  padding-top: 4%;
+}
+
+#top-text p {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+.mid-content1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: left;
+}
+
+#strat img {
+  width: 100%;
+}
+
+#strat h2 {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#strat p {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+#strat {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2.8px solid #ff4b00;
+  text-align: justify;
+  font-weight: 2rem;
+}
+
+#how-we-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2.8px solid #ff4b00;
+  text-align: justify;
+  font-weight: 2rem;
+  padding-left: 5%;
+}
+
+#how-we-work img {
+  width: 100%;
+}
+
+#how-we-work h2 {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#how-we-work p {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+.mid-content2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  text-align: left;
+}
+
+#places-we-work img {
+  width: 100%;
+}
+
+#places-we-work h2 {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#places-we-work p {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+#places-we-work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2.8px solid #ff4b00;
+  text-align: justify;
+  font-weight: 2rem;
+}
+
+#collaboration {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  border-bottom: 2.8px solid #ff4b00;
+  text-align: justify;
+  font-weight: 2rem;
+  padding-left: 5%;
+}
+
+#collaboration img {
+  width: 100%;
+}
+
+#collaboration h2 {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#collaboration p {
+  text-align: left;
+  padding-bottom: 5%;
+}
+
+.work-together p {
+  text-align: left;
+  font: 2rem;
+}
+
+.work-together h2 {
+  text-align: left;
+}
+
+.work-together {
+  padding-bottom: 10%;
+}
 
 /*Responsive Styles*/
